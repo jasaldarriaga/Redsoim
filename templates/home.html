@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/stylee.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>RedSoim</title>
+</head>
+<body>
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido de nuevo a RedSoim</h2>
+                <p>Si ya eres RedSoim por favor inicia seccion aqui</p>
+                <button class="sign-up-btn">Iniciar sección</button>
+            </div>
+        </div>
+        <!-- creacion nuevo usuario -->
+        <form action="/usuario/crear" class="formulario" method="post" >
+            <h2 class="create-account">Crear una Cuenta</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class="material-icons">
+                        south_america
+                       </i>
+                </div>
+                <div class="border-icon">
+                    <i class="material-icons">cyclone</i>
+                </div>
+                <div class="border-icon">
+                    <i class="material-icons">
+                        downhill_skiing
+                    </i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">Crear una cuenta gratis</p>
+            <input type="text" placeholder="Nombre" name="txtNombre">
+            <input type="email" placeholder="Email" name="txtEmail">
+            <input type="password" placeholder="Contraseña" name="txtContraseña">
+            <input type="password" placeholder="Confirmar" name="txtConfirmar">
+            <input type="submit" value="Registrarse">
+            <!-- Inicio seccion usuario -->
+        </form>
+    </div>
+    <div class="container-form sign-in">
+        <form action="/login" class="formulario" method="post">
+            <h2 class="create-account">Iniciar sección</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class="material-icons">
+                        south_america
+                       </i>
+                </div>
+                <div class="border-icon">
+                    <i class="material-icons">cyclone</i>
+                </div>
+                <div class="border-icon">
+                    <i class="material-icons">
+                        downhill_skiing
+                    </i>
+                </div>
+            </div>
+            <p class="cuenta-gratis"> Aun no tienes cuenta? </p>
+            <input type="text" placeholder="Nombre" name="txtNombre">
+            <input type="email" placeholder="Email" name="txtEmail" >
+            <input type="password" placeholder="Contraseña"name=txtContrasena>
+            <input type="submit" value="iniciar sección">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+                <h2>Bienvenido a RedSoim</h2>
+                <p>Si aun no eres RedSoim por favor registrate aqui</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
