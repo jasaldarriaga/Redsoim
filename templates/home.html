@@ -22,6 +22,7 @@
         </div>
         <!-- creacion nuevo usuario -->
         <form action="/usuario/crear" class="formulario" method="post" >
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
             <h2 class="create-account">Crear una Cuenta</h2>
             <div class="iconos">
                 <div class="border-icon">
@@ -49,6 +50,7 @@
     </div>
     <div class="container-form sign-in">
         <form action="/login" class="formulario" method="post">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
             <h2 class="create-account">Iniciar sección</h2>
             <div class="iconos">
                 <div class="border-icon">
